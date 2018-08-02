@@ -1,0 +1,350 @@
+@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+/* line 5, ../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 11, ../components/sass/_base.scss */
+body {
+  font-family: "Libre Baskerville", serif;
+  font-size: 1.2rem;
+  line-height: 160%;
+  background: #fdfdfe url(../img/background.jpg) repeat;
+  color: #000;
+  padding: 3%;
+  min-width: 800px;
+}
+
+/* line 21, ../components/sass/_base.scss */
+h1, h2, h3, h4, h5, h6 {
+  color: #000;
+  font-family: "Roboto Slab", serif;
+  font-size: 1.4rem;
+  text-align: center;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+/* line 30, ../components/sass/_base.scss */
+#bg_gradient {
+  min-width: 800px;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-image: -webkit-radial-gradient(50% 360px, circle, #fff, #000);
+  background-image: radial-gradient(  circle at 50% 360px, #fff, #000);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+  z-index: 0;
+}
+
+/* line 43, ../components/sass/_base.scss */
+main ul {
+  position: relative;
+}
+/* line 46, ../components/sass/_base.scss */
+main ul li {
+  margin-left: -80px;
+  position: absolute;
+}
+/* line 53, ../components/sass/_base.scss */
+main ul li article header h2 a {
+  width: 160px;
+  height: 160px;
+  display: block;
+}
+/* line 62, ../components/sass/_base.scss */
+main ul li section {
+  position: absolute;
+  width: 330px;
+  background: #fdfdfe;
+  z-index: 3;
+  top: 0;
+  padding: 0 0 10px 0;
+  left: -85px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  -moz-box-shadow: 0px 0px 20px #333;
+  -webkit-box-shadow: 0px 0px 20px #333;
+  box-shadow: 0px 0px 20px #333;
+  display: none;
+}
+/* line 74, ../components/sass/_base.scss */
+main ul li section h3 {
+  background: #6b6b63;
+  margin: 0;
+  padding: 5px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+/* line 80, ../components/sass/_base.scss */
+main ul li section h3 a {
+  color: #fdfdfe;
+  text-decoration: none;
+}
+/* line 86, ../components/sass/_base.scss */
+main ul li section ul {
+  left: 120px;
+  list-style: circle;
+}
+/* line 90, ../components/sass/_base.scss */
+main ul li section ul li {
+  position: relative;
+}
+/* line 93, ../components/sass/_base.scss */
+main ul li section ul li a {
+  color: #6b6b63;
+}
+/* line 102, ../components/sass/_base.scss */
+main ul li.radial_list:nth-child(1) {
+  top: 559.80762px;
+  left: 70%;
+}
+/* line 102, ../components/sass/_base.scss */
+main ul li.radial_list:nth-child(2) {
+  top: 559.80762px;
+  left: 30%;
+}
+/* line 102, ../components/sass/_base.scss */
+main ul li.radial_list:nth-child(3) {
+  top: 300px;
+  left: 10%;
+}
+/* line 102, ../components/sass/_base.scss */
+main ul li.radial_list:nth-child(4) {
+  top: 40.19238px;
+  left: 30.0%;
+}
+/* line 102, ../components/sass/_base.scss */
+main ul li.radial_list:nth-child(5) {
+  top: 40.19238px;
+  left: 70%;
+}
+/* line 102, ../components/sass/_base.scss */
+main ul li.radial_list:nth-child(6) {
+  top: 300.0px;
+  left: 90%;
+}
+
+/* line 110, ../components/sass/_base.scss */
+#my_photo {
+  margin-top: 211px;
+  z-index: 1;
+}
+/* line 114, ../components/sass/_base.scss */
+#my_photo figure {
+  width: 200px;
+  margin: 0 auto;
+}
+/* line 118, ../components/sass/_base.scss */
+#my_photo figure header {
+  position: relative;
+}
+/* line 121, ../components/sass/_base.scss */
+#my_photo figure header img {
+  width: 200px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  -moz-box-shadow: 0px 0px 20px #333;
+  -webkit-box-shadow: 0px 0px 20px #333;
+  box-shadow: 0px 0px 20px #333;
+}
+/* line 127, ../components/sass/_base.scss */
+#my_photo figure header #brain {
+  background: url(../img/brain_2.png);
+  position: absolute;
+  width: 150px;
+  height: 111px;
+  top: 25px;
+  left: 25px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  transition-duration: 1s;
+}
+/* line 138, ../components/sass/_base.scss */
+#my_photo figure header #brain:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+  opacity: 0.4;
+}
+/* line 143, ../components/sass/_base.scss */
+#my_photo figure header figcaption {
+  text-align: center;
+  position: relative;
+}
+/* line 147, ../components/sass/_base.scss */
+#my_photo figure header figcaption .black_background {
+  background: #000;
+  width: 200px;
+  height: 32px;
+  position: absolute;
+  width: 200px;
+  top: -40px;
+  z-index: 1;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+  opacity: 0.3;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+/* line 159, ../components/sass/_base.scss */
+#my_photo figure header figcaption h1 {
+  margin-top: 0;
+  font-size: 1.4rem;
+  color: #fdfdfe;
+  text-shadow: #000 0 0 3px;
+  z-index: 20;
+  position: absolute;
+  width: 200px;
+  top: -40px;
+  z-index: 2;
+}
+/* line 173, ../components/sass/_base.scss */
+#my_photo figure footer {
+  position: relative;
+}
+/* line 176, ../components/sass/_base.scss */
+#my_photo figure footer address {
+  position: absolute;
+  z-index: 1;
+}
+/* line 181, ../components/sass/_base.scss */
+#my_photo figure footer address ul li {
+  float: left;
+  margin: 5px;
+}
+/* line 185, ../components/sass/_base.scss */
+#my_photo figure footer address ul li a {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  display: block;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+/* line 199, ../components/sass/_base.scss */
+.social_gmail {
+  background: url(../img/social/mail.jpg) no-repeat;
+}
+
+/* line 203, ../components/sass/_base.scss */
+.social_vk {
+  background: url(../img/social/vk.jpg) no-repeat;
+}
+
+/* line 207, ../components/sass/_base.scss */
+.social_facebook {
+  background: url(../img/social/facebook.jpg) no-repeat;
+}
+
+/* line 211, ../components/sass/_base.scss */
+.social_skype {
+  background: url(../img/social/skype.jpg) no-repeat;
+}
+
+/* line 215, ../components/sass/_base.scss */
+#activity_music {
+  background: url(../img/note.png) no-repeat;
+}
+
+/* line 219, ../components/sass/_base.scss */
+#activity_sites {
+  background: url(../img/web.png) no-repeat;
+}
+
+/* line 223, ../components/sass/_base.scss */
+#activity_art {
+  background: url(../img/palette.png) no-repeat;
+}
+
+/* line 227, ../components/sass/_base.scss */
+#activity_sport {
+  background: url(../img/sport.png) no-repeat;
+}
+
+/* line 231, ../components/sass/_base.scss */
+#activity_books {
+  background: url(../img/book.png) no-repeat;
+}
+
+/* line 235, ../components/sass/_base.scss */
+#activity_video {
+  background: url(../img/film.png) no-repeat;
+}
+
+/* line 21, ../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/susy-2.2.7/sass/susy/language/susy/_box-sizing.scss */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
